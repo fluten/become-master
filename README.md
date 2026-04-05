@@ -3,6 +3,7 @@
 > 不废话，不绕弯。想成为某领域大师？直接成为。
 
 一个 Claude Skill，帮你在 5 分钟内获得某个领域的「大师速成包」，让你能跟该领域的从业者侃侃而谈，不露怯。
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [![Claude Skill](https://img.shields.io/badge/Claude-Skill-blueviolet?logo=anthropic)](https://claude.ai) [![GitHub](https://img.shields.io/badge/GitHub-fluten-181717?logo=github)](https://github.com/fluten) [![中文](https://img.shields.io/badge/语言-中文-red)](.)
 ## 它能做什么？
 
