@@ -1,4 +1,4 @@
-# 🚀 直接成为 — Become Master[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [![Claude Skill](https://img.shields.io/badge/Claude-Skill-blueviolet?logo=anthropic)](https://claude.ai) [![GitHub](https://img.shields.io/badge/GitHub-fluten-181717?logo=github)](https://github.com/fluten) [![中文](https://img.shields.io/badge/语言-中文-red)](.)
+# 🚀 直接成为 — Become Master [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [![Claude Skill](https://img.shields.io/badge/Claude-Skill-blueviolet?logo=anthropic)](https://claude.ai) [![GitHub](https://img.shields.io/badge/GitHub-fluten-181717?logo=github)](https://github.com/fluten) [![中文](https://img.shields.io/badge/语言-中文-red)](.)
 
 > 不废话，不绕弯。想成为某领域大师？直接成为。
 
