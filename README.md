@@ -32,7 +32,50 @@
 
 ## 安装
 
-下载 `become-master.skill` 文件，在 Claude 桌面端或 Claude.ai 中导入即可使用。
+### 方式一：Claude 桌面端 / Claude.ai
+
+下载 `become-master.skill` 文件，在 Claude 桌面端或 Claude.ai 中导入即可。
+
+### 方式二：Claude Code
+
+Claude Code 直接读 `~/.claude/skills/` 或项目级 `.claude/skills/` 下的 SKILL.md，把整个 `become-master/` 目录拷过去就能用。
+
+**全局安装**（所有项目都可用，推荐）：
+
+```bash
+# macOS / Linux
+mkdir -p ~/.claude/skills
+cp -r become-master ~/.claude/skills/
+
+# Windows (PowerShell)
+New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
+Copy-Item -Recurse become-master "$HOME\.claude\skills\"
+```
+
+**项目级安装**（只在当前 repo 生效，适合团队共享）：
+
+```bash
+mkdir -p .claude/skills
+cp -r become-master .claude/skills/
+```
+
+装完之后，在 Claude Code 里直接说「我想直接成为 XXX」就会自动触发，不需要手动 `/skill` 调用。
+
+### 方式三：OpenClaw（小龙虾 🦞）
+
+OpenClaw 的 skill 格式跟 Claude Code 完全一致，安装路径也是 `.claude/skills/`，用上面 Claude Code 同样的命令拷贝即可——同一份 SKILL.md，两边通用，不需要重写。
+
+### 验证安装
+
+随便挑一个领域试试：
+
+```
+我想直接成为精品咖啡大师
+```
+
+Claude 应该立刻进入「老行家教兄弟」的模式，输出整套作战手册。如果它没有触发，检查一下：
+- SKILL.md 是否在正确路径下（`<skills 目录>/become-master/SKILL.md`，而不是直接放散件）
+- frontmatter 的 `name` 和 `description` 字段是否完整
 
 ## 使用示例
 
@@ -52,7 +95,10 @@
 ## 文件结构
 
 ```
-become-master/
-├── SKILL.md          # 技能定义文件
-└── README.md         # 你正在看的这个
+become-master/                  # 仓库根目录
+├── README.md                   # 你正在看的这个
+├── LICENSE                     # MIT 协议
+├── become-master.skill         # 打包好的 skill 文件，用于 Claude.ai / 桌面端导入
+└── become-master/              # skill 源目录，拷到 .claude/skills/ 即可被 Claude Code / OpenClaw 加载
+    └── SKILL.md                # 技能定义文件（frontmatter + 正文）
 ```

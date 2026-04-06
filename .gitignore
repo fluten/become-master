@@ -1,0 +1,15 @@
+# Claude Code / OpenClaw — local, user-specific harness state
+# (project-level .claude/settings.json and .claude/skills/ are intentionally
+# NOT ignored, so teams can still commit shared config and skills)
+.claude/settings.local.json
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*~
